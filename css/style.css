@@ -1,0 +1,62 @@
+/* ======================reset================== */
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+/* ====================== special class =================== */
+
+
+/* ========================== root ======================== */
+
+/* ===================== main style ======================= */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: grid;
+    grid-template: repeat(8,1fr)/repeat(8,1fr);
+    border: 1px solid #000;
+    background-image: url('1.jpg');
+}
+.main__item{
+    max-width: 70px;
+    max-height: 70px;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__item svg{
+    width: 90%;
+    height: 90%;
+        filter: 
+          drop-shadow(-1px -1px 0px #3e68ff) 
+          drop-shadow(2px -1px 0px #3e68ff) 
+          drop-shadow(2px 0px 0px #3e68ff)
+          drop-shadow(-1px 2px 0px #3e68ff)
+      
+}
+.main__item--dark{
+    background-color: rgba(0, 0, 0,.7);
+}
+.main__item--light{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.main__item--dark:hover{
+    background-color: rgba(0, 0, 255,.7) !important;
+}
+.main__item--light:hover{
+    background-color: rgba(0, 0, 255,.7) !important;
+}
